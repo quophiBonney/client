@@ -18,7 +18,7 @@ const Footer = () => {
           </Col>
           <Col sm={12} md={6} lg={3} className="mt-5">
             <div>
-              <h5 className="footer-title px-4">Quick Links</h5>
+              <h5 className="footer-title px-3">Quick Links</h5>
               <ul>
                 <li>Home</li>
                 <li>About Us</li>
@@ -28,7 +28,7 @@ const Footer = () => {
           </Col>
           <Col sm={12} md={6} lg={3} className="mt-5">
             <div className="">
-              <h5 className="footer-title px-4">Address/Location</h5>
+              <h5 className="footer-title px-3">Address/Location</h5>
               <ul>
                 <li>Post Office</li>
                 <li>daremmanuel@gmail.com</li>
@@ -38,7 +38,7 @@ const Footer = () => {
           </Col>
           <Col sm={12} md={6} lg={3} className="mt-5">
             <div>
-              <h5 className="footer-title px-4">Connect With Us</h5>
+              <h5 className="footer-title px-3">Connect With Us</h5>
               <p>
                 <BsFacebook className="m-2" />
                 <BsTwitter className="m-2" />
