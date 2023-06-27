@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  height: 100vh;
+  overflow-x: hidden;
+}
+/**** Texts Fonts Sizes ****/
+.main-text {
+  font-size: 3.8rem;
+  color:rgb(31, 111, 96);
+  line-height: 1.3;
+  font-weight: bolder;
+  font-family: 'Poppins', sans-serif;
+}
+.second-text {
+  font-size: 3rem;
+  color:rgba(1, 1, 26, 0.843);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+}
+.third-text {
+  font-size: 2rem!important;
+  font-family: 'Poppins', sans-serif!important;
+  font-weight: 800!important;
+  color:rgba(1, 1, 26, 0.843)
+}
+.paragraph {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+/*** Banner ****/
+.banner {
+  background: rgba(242, 242, 251, 0.666);
+  height: auto;
+  background-attachment: fixed;
+}
+.sec-column {
+  background-image: url("/src/assets/images/use.png");
+  background-position: center center;
+  background-size: cover;
+  height: auto;
+  border: 0;
+}
+.btn {
+  font-family: 'Anthon', sans-serif!important;
+  font-weight: 700!important;
+  padding: 10px 10px!important;
+}
+/*** Discover ***/
+.discover {
+  background: linear-gradient(rgba(178, 215, 184, 0.6), rgba(178, 215, 184, 0.6))
+}
+ul {
+  list-style: none;
+}
+@media screen and (max-width: 768px) {
+  body {
+    height: 100vh;
+    overflow-x: hidden;
+  }
+  .main-text, .second-text, .third-text {
+    font-size: 2rem;
+  }
+  .sec-column {
+    height: 300px;
+  }
+}
