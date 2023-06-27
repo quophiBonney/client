@@ -1,6 +1,6 @@
 import React from "react";
 import {Container, Row, Col} from "react-bootstrap";
-import phone from "../../assets/images/phone.png";
+import phone from "../../assets/images/use.png";
 const Flow = () => {
   return (
     <div className="container-fluid discover">

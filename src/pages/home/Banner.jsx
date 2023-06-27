@@ -5,19 +5,11 @@ import playstore from "../../assets/images/playstore.png";
 const Banner = () => {
   return (
     <div className="container-fluid banner">
-      <Container className="mt-5" style={{overflowX: "hidden"}}>
-        <Row className="justify-content-center d-flex">
-          <Col
-            sm={12}
-            md={6}
-            lg={6}
-            className="mt-3"
-            data-aos="slide-right"
-            data-aos-duration="2000"
-            data-aos-delay="100"
-          >
-            <h1 className="main-text mt-5">Managing money, made simple</h1>
-            <p className="paragraph">
+      <Container className="">
+        <Row className="justify-content-center">
+          <Col sm={12} md={6} lg={6} className="first-col">
+            <h1 className="main-text">Managing money, made simple</h1>
+            <p className="paragraph text-light">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora
               aliquid nostrum aliquam consectetur, necessitatibus aut commodi
               vel quod molestias voluptates!
@@ -26,14 +18,14 @@ const Banner = () => {
               Download Our App
             </button>
             <div className="d-flex mb-5">
-              <div>
+              <div className="m-2">
                 <img
                   src={appstore}
                   alt="download from appstore"
                   className="img-fluid"
                 />
               </div>
-              <div>
+              <div className="m-2">
                 <img
                   src={playstore}
                   alt="download from appstore"

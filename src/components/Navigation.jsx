@@ -1,20 +1,30 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import {HiMenuAlt3} from "react-icons/hi";
-import {
-  BsFacebook,
-  BsInstagram,
-  BsLinkedin,
-  BsTiktok,
-  BsTwitter,
-  BsYoutube,
-} from "react-icons/bs";
+import {BsFacebook, BsInstagram, BsLinkedin, BsTwitter} from "react-icons/bs";
+import {Link} from "react-router-dom";
 const Navigation = () => {
+  const [navbar, setNavbar] = useState("navbar-transparent");
+  useEffect(() => {
+    const changeNavbarBackground = () => {
+      const scrollPosition = window.scrollY;
+      const scrollHeight = 1;
+      if (scrollPosition > scrollHeight) {
+        setNavbar("navbar-black");
+      } else {
+        setNavbar("navbar-transparent");
+      }
+    };
+    window.addEventListener("scroll", changeNavbarBackground);
+    return () => {
+      window.removeEventListener("scroll", changeNavbarBackground);
+    };
+  }, []);
   return (
     <div>
-      <Navbar expand="lg" className="fixed-top bg-light navbar-light shadow">
+      <Navbar expand="lg" className={`fixed-top ${navbar}`}>
         <Container>
           <Navbar.Brand href="#">Logo</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav">
@@ -23,13 +33,19 @@ const Navigation = () => {
             </span>
           </Navbar.Toggle>
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="me-auto my-2 my-lg-0">
-              <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="#action2">How It Works</Nav.Link>
-              <Nav.Link href="#action2">About Us</Nav.Link>
-              <Nav.Link href="#action2">Contact</Nav.Link>
-            </Nav>
-            <Nav>
+            <Nav className="ms-auto">
+              <Link to="/" className="nav-links m-2">
+                Home
+              </Link>
+              <Link to="/works" className="nav-links m-2">
+                How It Works
+              </Link>
+              <Link to="/about-us" className="nav-links m-2">
+                About Us
+              </Link>
+              <Link to="/contact" className="nav-links m-2">
+                Contact
+              </Link>
               <div className="d-flex">
                 <div className="icons m-2">
                   <BsFacebook />
