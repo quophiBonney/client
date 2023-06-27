@@ -26,10 +26,12 @@ const Navigation = () => {
     <div>
       <Navbar expand="lg" className={`fixed-top ${navbar}`}>
         <Container>
-          <Navbar.Brand href="#">Logo</Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav">
-            <span>
-              <HiMenuAlt3 />
+          <Navbar.Brand href="#" className="text-light">
+            Logo
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav bg-dark">
+            <span className="">
+              <HiMenuAlt3 className="text-light" />
             </span>
           </Navbar.Toggle>
           <Navbar.Collapse id="responsive-navbar-nav">

@@ -119,6 +119,9 @@ ul {
     height: 100vh;
     overflow-x: hidden;
   }
+  .main-text {
+    margin-top: 60px;
+  }
   .main-text, .second-text, .third-text {
     font-size: 2rem;
   }

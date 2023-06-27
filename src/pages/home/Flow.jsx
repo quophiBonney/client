@@ -20,7 +20,7 @@ const Flow = () => {
               All your accounts. <br />
               All in one place.
             </h3>
-            <p className="paragraph">
+            <p className="paragraph text-light">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora
               aliquid nostrum aliquam consectetur, necessitatibus aut commodi
               vel quod molestias voluptates!
