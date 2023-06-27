@@ -5,7 +5,7 @@ import playstore from "../../assets/images/playstore.png";
 const Banner = () => {
   return (
     <div className="container-fluid banner">
-      <Container className="mt-5">
+      <Container className="mt-5" style={{overflowX: "hidden"}}>
         <Row className="justify-content-center d-flex">
           <Col
             sm={12}
