@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import "./App.css";
 import Navigation from "./components/Navigation";
 import {Routes, Route} from "react-router-dom";
@@ -9,18 +9,32 @@ import "aos/dist/aos.css";
 import AOS from "aos";
 import Works from "./pages/works/Works";
 import Footer from "./components/Footer";
+import Preloader from "./components/Preloader";
 function App() {
+  const [preloader, setPreloader] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setPreloader(false);
+    }, 4000);
+  });
+
   AOS.init();
   return (
     <>
-      <Navigation />
-      <Routes>
-        <Route path="/" exact element={<Home />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/about-us" element={<About />} />
-        <Route path="/works" element={<Works />} />
-      </Routes>
-      <Footer />
+      {preloader ? (
+        <Preloader />
+      ) : (
+        <div>
+          <Navigation />
+          <Routes>
+            <Route path="/" exact element={<Home />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/about-us" element={<About />} />
+            <Route path="/works" element={<Works />} />
+          </Routes>
+          <Footer />
+        </div>
+      )}
     </>
   );
 }
