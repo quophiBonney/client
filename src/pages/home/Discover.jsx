@@ -18,19 +18,19 @@ const Discover = () => {
             md={6}
             lg={6}
             className=""
-            data-aos="slide-right"
-            data-aos-duration="2000"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
             data-aos-delay="100"
           >
-            <img src={img1} alt="desktop" className="" />
+            <img src={img1} alt="desktop" className="" loading="lazy" />
           </Col>
           <Col
             sm={12}
             md={6}
             lg={6}
             className="mt-5"
-            data-aos="slide-left"
-            data-aos-duration="3000"
+            data-aos="zoom-in"
+            data-aos-duration="2000"
             data-aos-delay="200"
           >
             <h3 className="second-text mt-3">

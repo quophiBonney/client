@@ -5,7 +5,12 @@ import Navbar from "react-bootstrap/Navbar";
 import {HiMenuAlt3} from "react-icons/hi";
 import {BsFacebook, BsInstagram, BsLinkedin, BsTwitter} from "react-icons/bs";
 import {Link} from "react-router-dom";
+import logo from "../assets/svgs/fav_logo.ico";
+import secondLogo from "../assets/svgs/fav_logo1.ico";
 const Navigation = () => {
+  const [first, setFirst] = useState(secondLogo);
+  const [toggleIcon, setToggleIcon] = useState("text-light");
+  const [navLink, setNavLink] = useState("text-light text-decoration-none");
   const [navbar, setNavbar] = useState("navbar-transparent");
   useEffect(() => {
     const changeNavbarBackground = () => {
@@ -13,8 +18,14 @@ const Navigation = () => {
       const scrollHeight = 1;
       if (scrollPosition > scrollHeight) {
         setNavbar("navbar-black");
+        setFirst(logo);
+        setNavLink("text-dark navLink");
+        setToggleIcon("text-dark");
       } else {
         setNavbar("navbar-transparent");
+        setFirst(secondLogo);
+        setNavLink("text-light navLink");
+        setToggleIcon("text-light");
       }
     };
     window.addEventListener("scroll", changeNavbarBackground);
@@ -26,26 +37,31 @@ const Navigation = () => {
     <div>
       <Navbar expand="lg" className={`fixed-top ${navbar}`}>
         <Container>
-          <Navbar.Brand href="#" className="text-light">
-            Logo
+          <Navbar.Brand href="#">
+            <img
+              src={`${first}`}
+              className="img-responsive img-fluid"
+              alt="logo"
+              style={{width: "4.5em", height: "3em"}}
+            />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav bg-dark">
             <span className="">
-              <HiMenuAlt3 className="text-light" />
+              <HiMenuAlt3 className={`${toggleIcon}`} />
             </span>
           </Navbar.Toggle>
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ms-auto">
-              <Link to="/" className="nav-links m-2">
+              <Link to="/" className={`m-2 ${navLink}`}>
                 Home
               </Link>
-              <Link to="/works" className="nav-links m-2">
+              <Link to="/works" className={`m-2 ${navLink}`}>
                 How It Works
               </Link>
-              <Link to="/about-us" className="nav-links m-2">
+              <Link to="/about-us" className={`m-2 ${navLink}`}>
                 About Us
               </Link>
-              <Link to="/contact" className="nav-links m-2">
+              <Link to="/contact" className={`m-2 ${navLink}`}>
                 Contact
               </Link>
               <div className="d-flex">

@@ -13,13 +13,14 @@ const Bill = () => {
             lg={6}
             className="mt-5 mb-3"
             data-aos="slide-right"
-            data-aos-duration="2000"
+            data-aos-duration="1000"
             data-aos-delay="100"
           >
             <img
               src={client1}
               alt="phone"
               className="img-fluid img-responsive"
+              loading="lazy"
             />
           </Col>
           <Col
@@ -28,7 +29,7 @@ const Bill = () => {
             lg={6}
             className="mt-5"
             data-aos="slide-left"
-            data-aos-duration="3000"
+            data-aos-duration="1000"
             data-aos-delay="200"
           >
             <h3 className="third-text mt-5">Bill Negotiation</h3>

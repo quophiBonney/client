@@ -13,7 +13,7 @@ const Flow = () => {
             lg={6}
             className="mt-5 mb-3"
             data-aos="zoom-in"
-            data-aos-duration="2000"
+            data-aos-duration="1000"
             data-aos-delay="100"
           >
             <h3 className="third-text mt-3">
@@ -35,10 +35,15 @@ const Flow = () => {
             lg={6}
             className="mb-3"
             data-aos="zoom-in"
-            data-aos-duration="3000"
+            data-aos-duration="1000"
             data-aos-delay="200"
           >
-            <img src={phone} alt="phone" className="img-fluid img-responsive" />
+            <img
+              src={phone}
+              alt="phone"
+              className="img-fluid img-responsive"
+              loading="lazy"
+            />
           </Col>
         </Row>
       </Container>
