@@ -4,7 +4,7 @@ import phone from "../../assets/images/phone.png";
 const Flow = () => {
   return (
     <div className="container-fluid discover">
-      <Container className="py-3">
+      <Container className="py-3" style={{overflowX: "hidden"}}>
         <br />
         <Row className="justify-content-center">
           <Col

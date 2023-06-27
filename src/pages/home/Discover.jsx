@@ -4,7 +4,7 @@ import img1 from "../../assets/images/client1.png";
 const Discover = () => {
   return (
     <div className="container-fluid discover">
-      <Container className="py-3">
+      <Container className="py-3" style={{overflowX: "hidden"}}>
         <br />
         <h2 className="second-text py-3 text-center">
           Discover what’s so amazing about Mint
