@@ -14,7 +14,7 @@ const Discover = () => {
             md={6}
             lg={6}
             className=""
-            data-aos="zoom-in"
+            data-aos="fade-in"
             data-aos-duration="1000"
             data-aos-delay="100"
           >
@@ -55,7 +55,7 @@ const Discover = () => {
             md={6}
             lg={6}
             className="sec-column mt-5"
-            data-aos="slide-left"
+            data-aos="fade-in"
             data-aos-duration="3000"
             data-aos-delay="200"
           ></Col>

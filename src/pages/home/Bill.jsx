@@ -12,7 +12,7 @@ const Bill = () => {
             md={6}
             lg={6}
             className="mt-5 mb-3"
-            data-aos="slide-right"
+            data-aos="zoom-out"
             data-aos-duration="1000"
             data-aos-delay="100"
           >
@@ -28,7 +28,7 @@ const Bill = () => {
             md={6}
             lg={6}
             className="mt-5"
-            data-aos="slide-left"
+            data-aos="zoom-out"
             data-aos-duration="1000"
             data-aos-delay="200"
           >
