@@ -130,8 +130,16 @@ img {
 }
 /*** Bill ***/
 .bill {
- background: linear-gradient( rgba(200, 240, 240, 0.461),rgba(200, 240, 240, 0.769));
+ background: linear-gradient( rgba(200, 240, 240, 0.461),rgba(200, 240, 240, 0.461));
  height: auto;
+}
+.assurance {
+  background: linear-gradient( rgba(200, 240, 240, 0.461),rgba(200, 240, 240, 0.461));
+  height: auto;
+}
+.support {
+  border-top: 10px solid teal;
+  width: 200px;
 }
 ul {
   list-style: none;

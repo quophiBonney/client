@@ -5,7 +5,7 @@ import {BsFacebook, BsInstagram, BsYoutube} from "react-icons/bs";
 import {Link} from "react-router-dom";
 const Form = () => {
   return (
-    <div>
+    <div className="container-fluid assurance">
       <Container className="">
         <Row className="justify-content-center">
           <Row>

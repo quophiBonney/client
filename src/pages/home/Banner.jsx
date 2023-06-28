@@ -2,7 +2,6 @@ import React from "react";
 import {Container, Row, Col} from "react-bootstrap";
 import appstore from "../../assets/images/appstore.png";
 import playstore from "../../assets/images/playstore.png";
-import {BsQuestion} from "react-icons/bs";
 const Banner = () => {
   return (
     <div className="container-fluid banner">
@@ -10,10 +9,7 @@ const Banner = () => {
         <Row className="justify-content-center">
           <Col sm={12} md={6} lg={6} className="first-col">
             <div>
-              <h1 className="main-text">
-                What is <strong>BuildBridge</strong>
-                <span className="question-mark">?</span>
-              </h1>
+              <h1 className="main-text">What is BuildBridge?</h1>
               <p className="paragraph text-light">
                 BuildBridge is a platform for connecting Africans living in the
                 diaspora with skilled contractors back on the continent. With

@@ -1,71 +1,68 @@
 import React from "react";
 import {Container, Row, Col} from "react-bootstrap";
+import client1 from "../../assets/images/client1.png";
+import appstore from "../../assets/images/appstore.png";
+import playstore from "../../assets/images/playstore.png";
 const Flow = () => {
   return (
-    <div className="container-fluid flow">
+    <div className="container-fluid bill">
       <Container className="py-3">
-        <div className="text-center">
-          <h3 className="second-text mt-3 text-uppercase">Who We Are</h3>
-          <p className="paragraph">
-            Discover our vision, mission and what makes us unique and the
-            partner you can trust always.
-          </p>
-        </div>
         <Row className="justify-content-center">
           <Col
             sm={12}
-            md={4}
-            lg={4}
-            className="mt-3 mb-3"
-            data-aos="zoom-in"
+            md={6}
+            lg={6}
+            className="mt-5"
+            data-aos="fade-out"
             data-aos-duration="1000"
-            data-aos-delay="100"
+            data-aos-delay="200"
           >
-            <div className="card shadow py-3 text-center about-container">
-              <h3 className="third-text mt-3">About Us</h3>
-              <p className="paragraph px-3">
-                We are passionate about empowering Aricans in the diaspora to
-                realize their construction dreams back on the continent. Our
-                team is committed to connecting skilled contractors with
-                clients.
-              </p>
+            <h3 className="third-text mt-5 py-3">
+              Stay Connected, Be Connected
+            </h3>
+            <p className="paragraph">
+              Our app connects contractors and clients to deal in all matters in
+              construction in a reliable and confidence manner that each other's
+              satisfaction is met. Our app fosters economic growth and creating
+              employment opportunities within Africa's construction industry. By
+              connecting skilled contractors with clients, we contribute to the
+              development of local businesses and communities.
+            </p>
+            <button type="button" className="btn text-light py-2 mb-3">
+              Download Our App
+            </button>
+            <div className="d-flex mb-5">
+              <div className="m-2">
+                <img
+                  src={appstore}
+                  alt="download from appstore"
+                  className="img-fluid"
+                />
+              </div>
+              <div className="m-2">
+                <img
+                  src={playstore}
+                  alt="download from appstore"
+                  className="img-fluid"
+                />
+              </div>
             </div>
           </Col>
           <Col
             sm={12}
-            md={4}
-            lg={4}
-            className="mt-3 mb-3"
-            data-aos="zoom-in"
+            md={6}
+            lg={6}
+            className="mt-5 mb-3"
+            data-aos="fade-out"
             data-aos-duration="1000"
             data-aos-delay="100"
           >
-            <div className="card shadow py-3 text-center about-container">
-              <h3 className="third-text mt-3">Our Vision</h3>
-              <p className="paragraph px-3">
-                We are in to bridge the gap between clients and contractors by
-                providing seamless and transparent process that ensures
-                high-quality workmanship and customer satisfaction.
-              </p>
-            </div>
-          </Col>
-          <Col
-            sm={12}
-            md={4}
-            lg={4}
-            className="mt-3 mb-3"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-            data-aos-delay="100"
-          >
-            <div className="card shadow py-3 text-center about-container">
-              <h3 className="third-text mt-3">Our Mission</h3>
-              <p className="paragraph px-3">
-                We are here to empower Africans in the diaspora to realize their
-                construction dreams back on the continent. Trust us to guide you
-                through your construction journey with reliability.
-              </p>
-            </div>
+            <img
+              src={client1}
+              alt="phone"
+              className="img-fluid img-responsive"
+              loading="lazy"
+            />
           </Col>
         </Row>
       </Container>
