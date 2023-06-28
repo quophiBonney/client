@@ -2,16 +2,18 @@ import React from "react";
 import {Container, Row, Col} from "react-bootstrap";
 const AboutBanner = () => {
   return (
-    <div className="container-fluid contact-banner">
+    <div className="container-fluid about-banner">
       <Container className="">
         <Row className="justify-content-center">
-          <Col sm={12} md={6} lg={6} className="first-col">
+          <Col sm={12} md={12} lg={12} className="text-center py-3">
             <div>
-              <h1 className="main-text">Let's Get In Touch</h1>
+              <h1 className="main-text">
+                <span className="comp-name">BuildBridge</span>
+              </h1>
               <p className="paragraph text-light mb-5">
-                We would love to hear from you. Whether you have inquiries,
-                partnership proposals, or general feedback feel free to contact
-                us.
+                Our platform bridges the gap between clients and contractors,
+                providing a seamless and transparent process that ensures
+                high-quality workmanship and customer satisfaction.
               </p>
             </div>
           </Col>

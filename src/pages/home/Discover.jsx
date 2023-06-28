@@ -1,6 +1,5 @@
 import React from "react";
 import {Container, Row, Col} from "react-bootstrap";
-import img1 from "../../assets/images/hand.png";
 import {BsDownload} from "react-icons/bs";
 import appstore from "../../assets/images/appstore.png";
 import playstore from "../../assets/images/playstore.png";

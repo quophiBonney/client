@@ -57,6 +57,10 @@ body {
   font-weight: 800!important;
   color:#000;
 }
+.comp-name {
+  font-size: 4.5rem;
+  color: #fff;
+}
 .paragraph {
   font-family: 'Poppins', sans-serif;
   font-size: 1.1rem;
@@ -89,6 +93,21 @@ img {
 }
 /*** Contact Banner ***/
 .contact-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("/src/assets/images/contact.png");
+  height: auto;
+  background-attachment: fixed;
+  background-position: top center;
+  background-size: cover;
+}
+.about-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("/src/assets/images/banner-04.jpg");
+  height: auto;
+  filter: sepia(30%);
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+.works-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("/src/assets/images/contact.png");
   height: auto;
   background-attachment: fixed;
@@ -137,6 +156,10 @@ img {
   background: linear-gradient( rgba(200, 240, 240, 0.461),rgba(200, 240, 240, 0.461));
   height: auto;
 }
+.steps-container {
+  background: linear-gradient( rgba(200, 240, 240, 0.461),rgba(200, 240, 240, 0.461)); 
+  height: auto;
+}
 .support {
   border-top: 10px solid teal;
   width: 200px;
@@ -154,6 +177,9 @@ ul {
   }
   .main-text, .second-text, .third-text {
     font-size: 2rem;
+  }
+  .comp-name {
+    font-size: 3rem;
   }
   .sec-column {
     display: none;

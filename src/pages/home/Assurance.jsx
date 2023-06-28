@@ -18,9 +18,7 @@ const Assurance = () => {
             <center>
               <div className="support shadow" />
             </center>
-            <h3 className="third-text mt-3 text-uppercase">
-              Experience Amazing Support
-            </h3>
+            <h3 className="third-text mt-3">Experience Amazing Support</h3>
             <p className="paragraph px-3">
               Our dedicated support team is here to assist you in every step of
               the way. If you have any questions, concerns or feedback, please
