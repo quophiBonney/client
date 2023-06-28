@@ -1,7 +1,7 @@
 import React from "react";
 import {Container, Row, Col} from "react-bootstrap";
 import {BsDownload} from "react-icons/bs";
-import client1 from "../../assets/images/client1.png";
+import client1 from "../../assets/images/hand.png";
 import appstore from "../../assets/images/appstore.png";
 const IphoneUsers = () => {
   return (

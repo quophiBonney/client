@@ -7,7 +7,7 @@ const WorkBanner = () => {
         <Row className="justify-content-center">
           <Col sm={12} md={12} lg={12} className="text-center py-3">
             <div>
-              <h1 className="main-text">How The BuildBridge App Works</h1>
+              <h1 className="main-text">How To Get The BuildBridge App</h1>
               <p className="paragraph text-light mb-5">
                 Discover how the <strong>BuildBridge Application</strong> workds
                 and how and where to get the application right on your mobile
