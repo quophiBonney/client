@@ -3,45 +3,10 @@ import {Container, Row, Col} from "react-bootstrap";
 import faq from "../../assets/images/robot.png";
 import {BsFacebook, BsInstagram, BsYoutube} from "react-icons/bs";
 import {Link} from "react-router-dom";
-import emailjs from "emailjs-com";
 const Form = () => {
-  emailjs.init("service_72s3mjd");
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  const [errors, setErrors] = useState([]);
-  const validateForm = () => {
-    const erros = [];
-    if (name === "") {
-      errors.push("Name is requred");
-    }
-    if (!email.match(/^[a-zA-z0-9._%+-]+@[a-zA=Z0-9.-]+\.[a-zA-Z]{2,3}$/)) {
-      errors.push("Invalid email address");
-    }
-    if (email === "") {
-      errors.push("Enter your email address");
-    }
-    if (message === "") {
-      errors.push("Please type your message");
-    }
-    setErrors(errors);
-    validateForm();
-  };
-  const handleSubmit = e => {
-    e.preventDefault();
-  };
-  if (errors.length === 0) {
-    const data = {
-      name: name,
-      email: email,
-      message: message,
-      to: "solomonbonney27@gmail.com",
-    };
-    emailjs.send("eWajEKtVogHGSP8cC", "vv_qwMHSfLmiolsB6XkNq", data);
-  }
   return (
     <div>
-      <Container className="" style={{overflowX: "hidden"}}>
+      <Container className="">
         <Row className="justify-content-center">
           <Row>
             <Col
@@ -126,13 +91,8 @@ const Form = () => {
               <p className="paragraph">
                 Fill the form below to send us your message.
               </p>
-              {errors.map((error, index) => {
-                <p className="text-danger paragraph" key={index}>
-                  {error}
-                </p>;
-              })}
             </div>
-            <form onSubmit={handleSubmit} method="post" action="/">
+            <form method="post" action="/">
               <div className="form-group mt-3">
                 <label htmlFor="Name">
                   Full Name<sup className="text-danger">*</sup>
@@ -140,7 +100,6 @@ const Form = () => {
                 <input
                   type="text"
                   placeholder="Full Name"
-                  onChange={setName}
                   className="form-control"
                 />
               </div>
@@ -151,7 +110,6 @@ const Form = () => {
                 <input
                   type="email"
                   placeholder="Email"
-                  onChange={setEmail}
                   className="form-control"
                 />
               </div>
@@ -162,7 +120,6 @@ const Form = () => {
                 <textarea
                   style={{height: "250px"}}
                   placeholder="Write your message here..."
-                  onChange={setMessage}
                   className="form-control"
                 />
               </div>

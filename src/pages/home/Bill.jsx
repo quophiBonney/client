@@ -4,7 +4,7 @@ import client1 from "../../assets/images/client1.png";
 const Bill = () => {
   return (
     <div className="container-fluid bill">
-      <Container className="py-3" style={{overflowX: "hidden"}}>
+      <Container className="py-3">
         <br />
         <Row className="justify-content-center">
           <Col

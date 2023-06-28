@@ -1,10 +1,9 @@
 import React from "react";
 import {Container, Row, Col} from "react-bootstrap";
-import phone from "../../assets/images/use.png";
 const Flow = () => {
   return (
     <div className="container-fluid flow">
-      <Container className="py-3" style={{overflowX: "hidden"}}>
+      <Container className="py-3">
         <div className="text-center">
           <h3 className="second-text mt-3 text-uppercase">Who We Are</h3>
           <p className="paragraph">
@@ -24,7 +23,7 @@ const Flow = () => {
           >
             <div className="card shadow py-3 text-center about-container">
               <h3 className="third-text mt-3">About Us</h3>
-              <p className="paragraph">
+              <p className="paragraph px-3">
                 We are passionate about empowering Aricans in the diaspora to
                 realize their construction dreams back on the continent. Our
                 team is committed to connecting skilled contractors with

@@ -5,12 +5,14 @@ import Navbar from "react-bootstrap/Navbar";
 import {HiMenuAlt3} from "react-icons/hi";
 import {BsFacebook, BsInstagram, BsLinkedin, BsTwitter} from "react-icons/bs";
 import {Link} from "react-router-dom";
-import logo from "../assets/svgs/fav_logo.ico";
+import logo from "../assets/images/logo2.png";
 import secondLogo from "../assets/svgs/fav_logo1.ico";
 const Navigation = () => {
   const [first, setFirst] = useState(secondLogo);
   const [toggleIcon, setToggleIcon] = useState("text-light");
-  const [navLink, setNavLink] = useState("text-light text-decoration-none");
+  const [navLink, setNavLink] = useState(
+    "text-light navLink text-decoration-none"
+  );
   const [navbar, setNavbar] = useState("navbar-transparent");
   useEffect(() => {
     const changeNavbarBackground = () => {
@@ -19,7 +21,7 @@ const Navigation = () => {
       if (scrollPosition > scrollHeight) {
         setNavbar("navbar-black");
         setFirst(logo);
-        setNavLink("text-light navLink");
+        setNavLink("text-dark navLink");
         setToggleIcon("text-dark");
       } else {
         setNavbar("navbar-transparent");
