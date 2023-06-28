@@ -133,11 +133,8 @@ img {
 }
 /*** Discover ***/
 .discover {
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),url("/src/assets/images/img3.jpg");
-  height: auto;
-  background-attachment: fixed;
-  background-position: top center;
-  background-size: cover;
+  background: linear-gradient( rgba(200, 240, 240, 0.461),rgba(200, 240, 240, 0.461));
+ height: auto;
 }
 .discover-icon {
   border: 5px solid teal;
