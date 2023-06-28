@@ -1,55 +1,80 @@
 import React from "react";
 import {Container, Row, Col} from "react-bootstrap";
 import {BsFacebook, BsInstagram, BsTwitter, BsWhatsapp} from "react-icons/bs";
+import {Link} from "react-router-dom";
+import logo from "../assets/images/logo.png";
 const Footer = () => {
   return (
     <div className="container-fluid footer bg-dark text-light">
       <Container className="py-3">
         <Row className="justify-content-center">
-          <Col sm={12} md={6} lg={3} className="mt-5">
-            <div>
-              <h5 className="footer-title">Company Name</h5>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Officiis, temporibus. Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Nihil, reiciendis.
-              </p>
-            </div>
+          <Col sm={12} md={4} lg={4} className="mt-3">
+            <img
+              src={logo}
+              alt="buildbridge logo"
+              className="img-fluid img-responsive"
+              style={{width: "6rem", height: "6rem"}}
+            />
+            <p className="paragraph">
+              We are passionate about empowering Aricans in the diaspora to
+              realize their construction dreams back on the continent.
+            </p>
           </Col>
-          <Col sm={12} md={6} lg={3} className="mt-5">
-            <div>
-              <h5 className="footer-title">Quick Links</h5>
-              <ul>
-                <li>Home</li>
-                <li>About Us</li>
-                <li>Contact</li>
-              </ul>
-            </div>
+          <Col sm={12} md={4} lg={4} className="mt-5">
+            <ul>
+              <li className="paragraph text-uppercase footer-title py-2">
+                Quick Links
+              </li>
+              <li>
+                <Link
+                  to="/"
+                  className="paragraph text-decoration-none text-light"
+                >
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/works"
+                  className="paragraph text-decoration-none text-light"
+                >
+                  How It Works
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/about-us"
+                  className="paragraph text-decoration-none text-light"
+                >
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/contact"
+                  className="paragraph text-decoration-none text-light"
+                >
+                  Contact
+                </Link>
+              </li>
+            </ul>
           </Col>
-          <Col sm={12} md={6} lg={3} className="mt-5">
-            <div className="">
-              <h5 className="footer-title">Address/Location</h5>
-              <ul>
-                <li>Post Office</li>
-                <li>daremmanuel@gmail.com</li>
-                <li>000 000 0000</li>
-              </ul>
-            </div>
-          </Col>
-          <Col sm={12} md={6} lg={3} className="mt-5">
-            <div>
-              <h5 className="footer-title">Connect With Us</h5>
-              <p>
-                <BsFacebook className="m-2" />
-                <BsTwitter className="m-2" />
-                <BsWhatsapp className="m-2" />
-                <BsInstagram className="m-2" />
-              </p>
-            </div>
+          <Col sm={12} md={4} lg={4} className="mt-5">
+            <ul>
+              <li className="paragraph text-uppercase footer-title py-2">
+                Locate Us
+              </li>
+              <li className="paragraph">ECG Volta Credit Union-Building</li>
+              <li className="paragraph">Ho,Volta Region-Ghana</li>
+              <li className="paragraph">buildbridge6@gmail.com</li>
+              <li className="paragraph">+23324414610</li>
+            </ul>
           </Col>
           <hr />
-          <div className="py-3 text-center">
-            <p>Copyright &copy; 2023 All Rights Reserved</p>
+          <div className="py-2 text-center">
+            <p className="paragraph">
+              Copyright &copy; 2023 All Rights Reserved
+            </p>
           </div>
         </Row>
       </Container>

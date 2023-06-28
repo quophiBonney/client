@@ -12,22 +12,6 @@ const IphoneUsers = () => {
             sm={12}
             md={6}
             lg={6}
-            className="mt-5"
-            data-aos="fade-in"
-            data-aos-duration="3000"
-            data-aos-delay="200"
-          >
-            <img
-              src={client1}
-              alt="phone"
-              className="img-fluid img-responsive"
-              loading="lazy"
-            />
-          </Col>
-          <Col
-            sm={12}
-            md={6}
-            lg={6}
             className=""
             data-aos="fade-in"
             data-aos-duration="1000"
@@ -56,6 +40,22 @@ const IphoneUsers = () => {
                 className="img-fluid"
               />
             </div>
+          </Col>
+          <Col
+            sm={12}
+            md={6}
+            lg={6}
+            className="mt-5"
+            data-aos="fade-in"
+            data-aos-duration="3000"
+            data-aos-delay="200"
+          >
+            <img
+              src={client1}
+              alt="phone"
+              className="img-fluid img-responsive"
+              loading="lazy"
+            />
           </Col>
         </Row>
       </Container>

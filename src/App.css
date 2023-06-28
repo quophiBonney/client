@@ -99,6 +99,14 @@ img {
   background-position: top center;
   background-size: cover;
 }
+.form-icons {
+  background: teal;
+  padding: 10px 10px;
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  border-radius: 10px;
+}
 .about-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("/src/assets/images/banner-04.jpg");
   height: auto;
@@ -125,7 +133,7 @@ img {
 }
 /*** Discover ***/
 .discover {
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url("/src/assets/images/img3.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),url("/src/assets/images/img3.jpg");
   height: auto;
   background-attachment: fixed;
   background-position: top center;

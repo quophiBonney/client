@@ -1,5 +1,8 @@
 import React from "react";
 import {Container, Row, Col} from "react-bootstrap";
+import {GoGoal} from "react-icons/go";
+import {GiStairsGoal} from "react-icons/gi";
+import {HiUserGroup} from "react-icons/hi";
 const Card = () => {
   return (
     <div className="container-fluid assurance">
@@ -22,6 +25,9 @@ const Card = () => {
             data-aos-delay="100"
           >
             <div className="card shadow py-3 text-center about-container">
+              <div>
+                <HiUserGroup className="form-icons" />
+              </div>
               <h3 className="third-text mt-3">About Us</h3>
               <p className="paragraph px-3">
                 We are passionate about empowering Aricans in the diaspora to
@@ -41,6 +47,9 @@ const Card = () => {
             data-aos-delay="100"
           >
             <div className="card shadow py-3 text-center about-container">
+              <div>
+                <GiStairsGoal className="form-icons" />
+              </div>
               <h3 className="third-text mt-3">Our Vision</h3>
               <p className="paragraph px-3">
                 We are in to bridge the gap between clients and contractors by
@@ -59,6 +68,9 @@ const Card = () => {
             data-aos-delay="100"
           >
             <div className="card shadow py-3 text-center about-container">
+              <div>
+                <GoGoal className="form-icons" />
+              </div>
               <h3 className="third-text mt-3">Our Mission</h3>
               <p className="paragraph px-3">
                 We are here to empower Africans in the diaspora to realize their

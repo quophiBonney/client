@@ -10,54 +10,29 @@ const Discover = () => {
         <Row className="justify-content-center">
           <Col
             sm={12}
-            md={6}
-            lg={6}
-            className=""
-            data-aos="fade-in"
+            md={12}
+            lg={12}
+            className="mt-5 text-light text-center"
+            data-aos="fade-out"
             data-aos-duration="1000"
-            data-aos-delay="100"
-          >
-            <h3 className="second-text text-light py-3 mt-3">
-              All your accounts. <br />
-              All in one place.
-            </h3>
-            <h3 className="mt-5 third-text text-light">
-              Join our trust based community by following these 3 steps:
-            </h3>
-            <p className="paragraph text-light py-3">
-              <BsDownload className="discover-icon m-2" />
-              Download Our App
-            </p>
-            <p className="paragraph text-light py-3">
-              <BsDownload className="discover-icon m-2" />
-              Download Our App
-            </p>
-            <div className="d-flex mb-5">
-              <div className="m-2">
-                <img
-                  src={appstore}
-                  alt="download from appstore"
-                  className="img-fluid"
-                />
-              </div>
-              <div className="m-2">
-                <img
-                  src={playstore}
-                  alt="download from appstore"
-                  className="img-fluid"
-                />
-              </div>
-            </div>
-          </Col>
-          <Col
-            sm={12}
-            md={6}
-            lg={6}
-            className="sec-column mt-5"
-            data-aos="fade-in"
-            data-aos-duration="3000"
             data-aos-delay="200"
-          ></Col>
+          >
+            <h3 className="text-light second-text mt-5 py-2">
+              Porject Supervision & Tracking
+            </h3>
+            <p className="paragraph px-3">
+              We believe in transparency and accountability throughtout your
+              project. Our app acts as a reliable supervisor, offering you
+              real-time updates and progress tracking. You can conveniently
+              monitor project milestones, communicate with the contractor and
+              ensure that the work is proceeding as planned.
+            </p>
+            <p className="paragraph px-3 mb-5">
+              With our project supervision and tracking feature, you stay
+              informed and have peace of mind, knowing that your project is
+              progressing smoothly and meeting your expectations.
+            </p>
+          </Col>
         </Row>
       </Container>
     </div>

@@ -2,6 +2,8 @@ import React, {useState} from "react";
 import {Container, Row, Col} from "react-bootstrap";
 import faq from "../../assets/images/robot.png";
 import {BsFacebook, BsInstagram, BsYoutube} from "react-icons/bs";
+import {MdConnectWithoutContact} from "react-icons/md";
+import {BiMap, BiMailSend} from "react-icons/bi";
 import {Link} from "react-router-dom";
 const Form = () => {
   return (
@@ -19,6 +21,9 @@ const Form = () => {
               data-aos-delay="100"
             >
               <div className="card shadow py-3 text-center about-container">
+                <div>
+                  <BiMailSend className="form-icons" />
+                </div>
                 <h3 className="third-text mt-3">Address</h3>
                 <ul className="paragraph px-3">
                   <li>buildbridge6@gmail.com</li>
@@ -37,10 +42,13 @@ const Form = () => {
               data-aos-delay="100"
             >
               <div className="card shadow py-3 text-center about-container">
+                <div>
+                  <BiMap className="form-icons" />
+                </div>
                 <h3 className="third-text mt-3">Location</h3>
                 <ul className="paragraph px-3">
                   <li>23 Agric Avenue,</li>
-                  <li>ECG Voltal Credit Union-Building</li>
+                  <li>ECG Volta Credit Union-Building</li>
                   <li>Ho,Volta Region-Ghana</li>
                 </ul>
               </div>
@@ -55,6 +63,9 @@ const Form = () => {
               data-aos-delay="100"
             >
               <div className="card shadow py-3 text-center about-container">
+                <div>
+                  <MdConnectWithoutContact className="form-icons" />
+                </div>
                 <h3 className="third-text mt-3">Connect With Us</h3>
                 <ul className="paragraph px-3">
                   <li>
