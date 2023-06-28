@@ -9,16 +9,20 @@ const Footer = () => {
       <Container className="py-3">
         <Row className="justify-content-center">
           <Col sm={12} md={4} lg={4} className="mt-3">
-            <img
-              src={logo}
-              alt="buildbridge logo"
-              className="img-fluid img-responsive"
-              style={{width: "6rem", height: "6rem"}}
-            />
-            <p className="paragraph">
-              We are passionate about empowering Aricans in the diaspora to
-              realize their construction dreams back on the continent.
-            </p>
+            <ul>
+              <li>
+                <img
+                  src={logo}
+                  alt="buildbridge logo"
+                  className="img-fluid img-responsive"
+                  style={{width: "6rem", height: "6rem"}}
+                />
+              </li>
+              <li className="paragraph">
+                We are passionate about empowering Aricans in the diaspora to
+                realize their construction dreams back on the continent.
+              </li>
+            </ul>
           </Col>
           <Col sm={12} md={4} lg={4} className="mt-5">
             <ul>

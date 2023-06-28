@@ -1,8 +1,5 @@
 import React from "react";
 import {Container, Row, Col} from "react-bootstrap";
-import {BsDownload} from "react-icons/bs";
-import appstore from "../../assets/images/appstore.png";
-import playstore from "../../assets/images/playstore.png";
 const Discover = () => {
   return (
     <div className="container-fluid discover">
@@ -12,12 +9,12 @@ const Discover = () => {
             sm={12}
             md={12}
             lg={12}
-            className="mt-5 text-center"
+            className="mt-5"
             data-aos="fade-out"
             data-aos-duration="1000"
             data-aos-delay="200"
           >
-            <h3 className="second-text mt-5 py-2">
+            <h3 className="text-center second-text mt-5 py-2">
               Porject Supervision & Tracking
             </h3>
             <p className="paragraph px-3">
