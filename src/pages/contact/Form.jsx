@@ -5,6 +5,7 @@ import {BsFacebook, BsInstagram, BsYoutube} from "react-icons/bs";
 import {Link} from "react-router-dom";
 import emailjs from "emailjs-com";
 const Form = () => {
+  emailjs.init("service_72s3mjd");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -24,25 +25,20 @@ const Form = () => {
       errors.push("Please type your message");
     }
     setErrors(errors);
+    validateForm();
   };
   const handleSubmit = e => {
     e.preventDefault();
-    validateForm();
-    if (errors.length === 0) {
-      const data = {
-        name: name,
-        email: email,
-        message: message,
-        to: "solomonbonney27@gmail.com",
-      };
-      emailjs.send("eWajEKtVogHGSP8cC", "vv_qwMHSfLmiolsB6XkNq", data);
-      if (err) {
-        console.log(err);
-      } else {
-        console.log(res);
-      }
-    }
   };
+  if (errors.length === 0) {
+    const data = {
+      name: name,
+      email: email,
+      message: message,
+      to: "solomonbonney27@gmail.com",
+    };
+    emailjs.send("eWajEKtVogHGSP8cC", "vv_qwMHSfLmiolsB6XkNq", data);
+  }
   return (
     <div>
       <Container className="" style={{overflowX: "hidden"}}>
@@ -136,7 +132,7 @@ const Form = () => {
                 </p>;
               })}
             </div>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} method="post" action="/">
               <div className="form-group mt-3">
                 <label htmlFor="Name">
                   Full Name<sup className="text-danger">*</sup>
