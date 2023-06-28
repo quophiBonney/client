@@ -8,29 +8,31 @@ const Banner = () => {
       <Container className="">
         <Row className="justify-content-center">
           <Col sm={12} md={6} lg={6} className="first-col">
-            <h1 className="main-text">Managing money, made simple</h1>
-            <p className="paragraph text-light">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora
-              aliquid nostrum aliquam consectetur, necessitatibus aut commodi
-              vel quod molestias voluptates!
-            </p>
-            <button type="button" className="btn btn-success py-2 mb-3">
-              Download Our App
-            </button>
-            <div className="d-flex mb-5">
-              <div className="m-2">
-                <img
-                  src={appstore}
-                  alt="download from appstore"
-                  className="img-fluid"
-                />
-              </div>
-              <div className="m-2">
-                <img
-                  src={playstore}
-                  alt="download from appstore"
-                  className="img-fluid"
-                />
+            <div>
+              <h1 className="main-text">Managing money, made simple</h1>
+              <p className="paragraph text-light">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Tempora aliquid nostrum aliquam consectetur, necessitatibus aut
+                commodi vel quod molestias voluptates!
+              </p>
+              <button type="button" className="btn btn-success py-2 mb-3">
+                Download Our App
+              </button>
+              <div className="d-flex mb-5">
+                <div className="m-2">
+                  <img
+                    src={appstore}
+                    alt="download from appstore"
+                    className="img-fluid"
+                  />
+                </div>
+                <div className="m-2">
+                  <img
+                    src={playstore}
+                    alt="download from appstore"
+                    className="img-fluid"
+                  />
+                </div>
               </div>
             </div>
           </Col>

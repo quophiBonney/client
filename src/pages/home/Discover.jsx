@@ -7,11 +7,7 @@ import playstore from "../../assets/images/playstore.png";
 const Discover = () => {
   return (
     <div className="container-fluid discover">
-      <Container className="py-3" style={{overflowX: "hidden"}}>
-        <br />
-        <h2 className="second-text py-3 text-center">
-          Discover what’s so amazing about Mint
-        </h2>
+      <Container className="">
         <Row className="justify-content-center">
           <Col
             sm={12}
@@ -22,18 +18,7 @@ const Discover = () => {
             data-aos-duration="1000"
             data-aos-delay="100"
           >
-            <img src={img1} alt="desktop" className="" loading="lazy" />
-          </Col>
-          <Col
-            sm={12}
-            md={6}
-            lg={6}
-            className="mt-5"
-            data-aos="zoom-in"
-            data-aos-duration="2000"
-            data-aos-delay="200"
-          >
-            <h3 className="second-text mt-3">
+            <h3 className="second-text text-light py-3 mt-3">
               All your accounts. <br />
               All in one place.
             </h3>
@@ -65,6 +50,15 @@ const Discover = () => {
               </div>
             </div>
           </Col>
+          <Col
+            sm={12}
+            md={6}
+            lg={6}
+            className="sec-column mt-5"
+            data-aos="slide-left"
+            data-aos-duration="3000"
+            data-aos-delay="200"
+          ></Col>
         </Row>
       </Container>
     </div>

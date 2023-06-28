@@ -3,7 +3,7 @@ import {Container, Row, Col} from "react-bootstrap";
 import phone from "../../assets/images/use.png";
 const Flow = () => {
   return (
-    <div className="container-fluid discover">
+    <div className="container-fluid flow">
       <Container className="py-3" style={{overflowX: "hidden"}}>
         <br />
         <Row className="justify-content-center">
@@ -20,7 +20,7 @@ const Flow = () => {
               All your accounts. <br />
               All in one place.
             </h3>
-            <p className="paragraph text-light">
+            <p className="paragraph">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora
               aliquid nostrum aliquam consectetur, necessitatibus aut commodi
               vel quod molestias voluptates!

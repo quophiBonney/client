@@ -3,7 +3,7 @@ import {Container, Row, Col} from "react-bootstrap";
 import client1 from "../../assets/images/client1.png";
 const Bill = () => {
   return (
-    <div className="container-fluid bill shadow">
+    <div className="container-fluid bill">
       <Container className="py-3" style={{overflowX: "hidden"}}>
         <br />
         <Row className="justify-content-center">
