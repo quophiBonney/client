@@ -5,45 +5,68 @@ const Flow = () => {
   return (
     <div className="container-fluid flow">
       <Container className="py-3" style={{overflowX: "hidden"}}>
-        <br />
+        <div className="text-center">
+          <h3 className="second-text mt-3 text-uppercase">Who We Are</h3>
+          <p className="paragraph">
+            Discover our vision, mission and what makes us unique and the
+            partner you can trust always.
+          </p>
+        </div>
         <Row className="justify-content-center">
           <Col
             sm={12}
-            md={6}
-            lg={6}
-            className="mt-5 mb-3"
+            md={4}
+            lg={4}
+            className="mt-3 mb-3"
             data-aos="zoom-in"
             data-aos-duration="1000"
             data-aos-delay="100"
           >
-            <h3 className="third-text mt-3">
-              All your accounts. <br />
-              All in one place.
-            </h3>
-            <p className="paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora
-              aliquid nostrum aliquam consectetur, necessitatibus aut commodi
-              vel quod molestias voluptates!
-            </p>
-            <button type="button" className="btn btn-success py-2 mb-3">
-              Download Our App
-            </button>
+            <div className="card shadow py-3 text-center about-container">
+              <h3 className="third-text mt-3">About Us</h3>
+              <p className="paragraph">
+                We are passionate about empowering Aricans in the diaspora to
+                realize their construction dreams back on the continent. Our
+                team is committed to connecting skilled contractors with
+                clients.
+              </p>
+            </div>
           </Col>
           <Col
             sm={12}
-            md={6}
-            lg={6}
-            className="mb-3"
+            md={4}
+            lg={4}
+            className="mt-3 mb-3"
             data-aos="zoom-in"
             data-aos-duration="1000"
-            data-aos-delay="200"
+            data-aos-delay="100"
           >
-            <img
-              src={phone}
-              alt="phone"
-              className="img-fluid img-responsive"
-              loading="lazy"
-            />
+            <div className="card shadow py-3 text-center about-container">
+              <h3 className="third-text mt-3">Our Vision</h3>
+              <p className="paragraph px-3">
+                We are in to bridge the gap between clients and contractors by
+                providing seamless and transparent process that ensures
+                high-quality workmanship and customer satisfaction.
+              </p>
+            </div>
+          </Col>
+          <Col
+            sm={12}
+            md={4}
+            lg={4}
+            className="mt-3 mb-3"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
+            <div className="card shadow py-3 text-center about-container">
+              <h3 className="third-text mt-3">Our Mission</h3>
+              <p className="paragraph px-3">
+                We are here to empower Africans in the diaspora to realize their
+                construction dreams back on the continent. Trust us to guide you
+                through your construction journey with reliability.
+              </p>
+            </div>
           </Col>
         </Row>
       </Container>

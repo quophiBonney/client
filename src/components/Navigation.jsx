@@ -19,7 +19,7 @@ const Navigation = () => {
       if (scrollPosition > scrollHeight) {
         setNavbar("navbar-black");
         setFirst(logo);
-        setNavLink("text-dark navLink");
+        setNavLink("text-light navLink");
         setToggleIcon("text-dark");
       } else {
         setNavbar("navbar-transparent");

@@ -32,11 +32,11 @@ const Bill = () => {
             data-aos-duration="1000"
             data-aos-delay="200"
           >
-            <h3 className="third-text mt-5">Bill Negotiation</h3>
+            <h3 className="third-text mt-5">Find Reliable Contractors</h3>
             <p className="paragraph">
-              Join the other Minters who’ve already racked up a combined $2M+ in
-              savings.2 Lorem ipsum, dolor sit amet consectetur adipisicing
-              elit. Sapiente, repellat.
+              <strong>BuildBridge</strong> provides you with the means to find
+              reliable contractors for all your construction needs and also
+              experience a seamless process from start to finish.
             </p>
             <button type="button" className="btn btn-success py-2 mb-3">
               Download Our App
