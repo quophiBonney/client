@@ -13,6 +13,22 @@ const Flow = () => {
             sm={12}
             md={6}
             lg={6}
+            className="mt-5 mb-3"
+            data-aos="fade-out"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
+            <img
+              src={client1}
+              alt="phone"
+              className="img-fluid img-responsive"
+              loading="lazy"
+            />
+          </Col>
+          <Col
+            sm={12}
+            md={6}
+            lg={6}
             className="mt-5"
             data-aos="fade-out"
             data-aos-duration="1000"
@@ -51,22 +67,6 @@ const Flow = () => {
                 />
               </div>
             </div>
-          </Col>
-          <Col
-            sm={12}
-            md={6}
-            lg={6}
-            className="mt-5 mb-3"
-            data-aos="fade-out"
-            data-aos-duration="1000"
-            data-aos-delay="100"
-          >
-            <img
-              src={client1}
-              alt="phone"
-              className="img-fluid img-responsive"
-              loading="lazy"
-            />
           </Col>
         </Row>
       </Container>

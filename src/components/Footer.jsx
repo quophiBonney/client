@@ -6,8 +6,8 @@ import logo from "../assets/images/logo.png";
 const Footer = () => {
   return (
     <div className="container-fluid footer bg-dark text-light">
-      <Container className="py-3">
-        <Row className="justify-content-center">
+      <Container className="">
+        <Row className="">
           <Col sm={12} md={4} lg={4} className="mt-3">
             <ul>
               <li>

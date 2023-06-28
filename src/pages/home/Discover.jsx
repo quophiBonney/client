@@ -17,14 +17,14 @@ const Discover = () => {
             <h3 className="text-center second-text mt-5 py-2">
               Porject Supervision & Tracking
             </h3>
-            <p className="paragraph px-3">
+            <p className="paragraph">
               We believe in transparency and accountability throughtout your
               project. Our app acts as a reliable supervisor, offering you
               real-time updates and progress tracking. You can conveniently
               monitor project milestones, communicate with the contractor and
               ensure that the work is proceeding as planned.
             </p>
-            <p className="paragraph px-3 mb-5">
+            <p className="paragraph mb-5">
               With our project supervision and tracking feature, you stay
               informed and have peace of mind, knowing that your project is
               progressing smoothly and meeting your expectations.
