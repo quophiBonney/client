@@ -6,11 +6,11 @@ const Review = () => {
       <Container className="">
         <Row className="justify-content-center">
           <Col sm={12} md={6} lg={6} className="">
-            <h3 className="second-text text-light mt-4">
+            <h3 className="second-text text-light text-center mt-4">
               Join BuildBridge Today
             </h3>
           </Col>
-          <Col sm={12} md={6} lg={6} className="">
+          <Col sm={12} md={6} lg={6} className="mt-2">
             <p className="paragraph text-light mt-3">
               Turn your construction visions into reality, empowering local
               businesses and contributing to Arica's growth and development.

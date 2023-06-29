@@ -67,44 +67,39 @@ const Form = () => {
                   <MdConnectWithoutContact className="form-icons" />
                 </div>
                 <h3 className="third-text mt-2">Connect With Us</h3>
-                <ul className="paragraph px-2 py-3 d-flex">
-                  <li>
-                    <Link
-                      to="https://www.facebook.com/profile.php?id=100093830333187"
-                      className="m-2 text-decoration-none text-dark"
-                      target="_blank"
-                    >
-                      <BsFacebook /> Facebook
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="https://www.instagram.com/BuildBridge"
-                      className="m-2 text-decoration-none text-dark"
-                      target="_blank"
-                    >
-                      <BsInstagram /> Instagram
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="https://www.twitter.com/BuildBridge"
-                      className="m-2 text-decoration-none text-dark"
-                      target="_blank"
-                    >
-                      <BsTwitter /> Twitter
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="https://www.youtube.com/BuildBridge"
-                      className="text-decoration-none text-dark"
-                      target="_blank"
-                    >
-                      <BsYoutube /> Youtube
-                    </Link>
-                  </li>
-                </ul>
+                <p className="paragraph">
+                  We are live and active on all the social media platforms.
+                </p>
+                <div className="d-flex justfy-content-center mx-auto">
+                  <Link
+                    to="https://www.facebook.com/profile.php?id=100093830333187"
+                    className="m-2 text-decoration-none text-dark"
+                    target="_blank"
+                  >
+                    <BsFacebook />
+                  </Link>
+                  <Link
+                    to="https://www.instagram.com/BuildBridge"
+                    className="m-2 text-decoration-none text-dark"
+                    target="_blank"
+                  >
+                    <BsInstagram />
+                  </Link>
+                  <Link
+                    to="https://www.twitter.com/BuildBridge"
+                    className="m-2 text-decoration-none text-dark"
+                    target="_blank"
+                  >
+                    <BsTwitter />
+                  </Link>
+                  <Link
+                    to="https://www.youtube.com/BuildBridge"
+                    className="m-2 text-decoration-none text-dark"
+                    target="_blank"
+                  >
+                    <BsYoutube />
+                  </Link>
+                </div>
               </div>
             </Col>
           </Row>

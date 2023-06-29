@@ -14,7 +14,7 @@ body {
 }
 /*** Navbar ***/
 .navbar-transparent {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.821);
   color: #fff!important;
   transition: .5s ease-out;
   height: auto;
