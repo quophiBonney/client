@@ -11,14 +11,14 @@ const Banner = () => {
           <Col sm={12} md={6} lg={6} className="first-col">
             <div>
               <h1 className="home-main-text">What is BuildBridge?</h1>
-              <p className="paragraph">
+              <p className="paragraph text-light">
                 BuildBridge is a platform for connecting Africans living in the
                 diaspora with skilled contractors back on the continent. With
                 BuildBridge, you build your dream porjects with confidence and
                 ease. Find reliable contractors for your construction needs and
                 experience a seamless process form start to finish.
               </p>
-              <p className="third-text">
+              <p className="third-text text-light">
                 #1 most downloaded engaging app<sup>1</sup>
               </p>
               <div className="d-flex mb-5">
@@ -43,7 +43,7 @@ const Banner = () => {
             <img
               src={phone}
               alt="download from appstore"
-              className="img-fluid img-responsive mt-3"
+              className="img-fluid img-responsive mt-5"
             />
           </Col>
         </Row>

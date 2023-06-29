@@ -45,7 +45,7 @@ const Navigation = () => {
               className="img-responsive img-fluid"
               id="logo"
               alt="logo"
-              style={{width: "3.6em", height: "3.5em"}}
+              style={{width: "3.4em", height: "3.4em"}}
             />
           </Navbar.Brand>
           <Navbar.Toggle
@@ -57,8 +57,8 @@ const Navigation = () => {
               <HiMenuAlt3
                 className={`toggle-icon ${toggleIcon}`}
                 style={{
-                  width: "1.8em",
-                  height: "1.8em",
+                  width: "1.5em",
+                  height: "1.5em",
                 }}
               />
             </span>
