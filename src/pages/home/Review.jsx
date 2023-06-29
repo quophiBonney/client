@@ -12,9 +12,8 @@ const Review = () => {
           </Col>
           <Col sm={12} md={6} lg={6} className="">
             <p className="paragraph text-light mt-3">
-              We are passionate about empowering Aricans in the diaspora to
-              realize their construction dreams back on the continent. Our team
-              is committed to connecting skilled contractors with clients.
+              Turn your construction visions into reality, empowering local
+              businesses and contributing to Arica's growth and development.
             </p>
           </Col>
         </Row>

@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {Container, Row, Col} from "react-bootstrap";
 import faq from "../../assets/images/robot.png";
-import {BsFacebook, BsInstagram, BsYoutube} from "react-icons/bs";
+import {BsFacebook, BsInstagram, BsTwitter, BsYoutube} from "react-icons/bs";
 import {MdConnectWithoutContact} from "react-icons/md";
 import {BiMap, BiMailSend} from "react-icons/bi";
 import {Link} from "react-router-dom";
@@ -66,30 +66,42 @@ const Form = () => {
                 <div>
                   <MdConnectWithoutContact className="form-icons" />
                 </div>
-                <h3 className="third-text mt-3">Connect With Us</h3>
-                <ul className="paragraph px-3">
+                <h3 className="third-text mt-2">Connect With Us</h3>
+                <ul className="paragraph px-2 py-3 d-flex">
                   <li>
                     <Link
-                      to="https://www.facebook.com/BuildBridge"
+                      to="https://www.facebook.com/profile.php?id=100093830333187"
                       className="m-2 text-decoration-none text-dark"
+                      target="_blank"
                     >
                       <BsFacebook /> Facebook
                     </Link>
                   </li>
                   <li>
                     <Link
-                      to="https://www.instagram.com/@BuildBridge"
+                      to="https://www.instagram.com/BuildBridge"
                       className="m-2 text-decoration-none text-dark"
+                      target="_blank"
                     >
                       <BsInstagram /> Instagram
                     </Link>
                   </li>
                   <li>
                     <Link
-                      to="https://www.youtube.com/@BuildBridge"
+                      to="https://www.twitter.com/BuildBridge"
                       className="m-2 text-decoration-none text-dark"
+                      target="_blank"
                     >
-                      <BsYoutube /> Youtube +
+                      <BsTwitter /> Twitter
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="https://www.youtube.com/BuildBridge"
+                      className="text-decoration-none text-dark"
+                      target="_blank"
+                    >
+                      <BsYoutube /> Youtube
                     </Link>
                   </li>
                 </ul>

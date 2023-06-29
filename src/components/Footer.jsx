@@ -1,8 +1,7 @@
 import React from "react";
 import {Container, Row, Col} from "react-bootstrap";
-import {BsFacebook, BsInstagram, BsTwitter, BsWhatsapp} from "react-icons/bs";
 import {Link} from "react-router-dom";
-import logo from "../assets/images/logo.png";
+import logo from "../assets/images/logo2.png";
 const Footer = () => {
   return (
     <div className="container-fluid footer bg-dark text-light">

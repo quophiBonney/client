@@ -3,10 +3,10 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import {HiMenuAlt3} from "react-icons/hi";
-import {BsFacebook, BsInstagram, BsLinkedin, BsTwitter} from "react-icons/bs";
+import {BsFacebook, BsInstagram, BsTwitter, BsYoutube} from "react-icons/bs";
 import {Link} from "react-router-dom";
-import logo from "../assets/images/logo2.png";
-import secondLogo from "../assets/svgs/fav_logo1.ico";
+import logo from "../assets/images/logo3.png";
+import secondLogo from "../assets/images/logo2.png";
 const Navigation = () => {
   const [first, setFirst] = useState(secondLogo);
   const [toggleIcon, setToggleIcon] = useState("text-light");
@@ -45,7 +45,7 @@ const Navigation = () => {
               className="img-responsive img-fluid"
               id="logo"
               alt="logo"
-              style={{width: "2em", height: "2em"}}
+              style={{width: "3.6em", height: "3.5em"}}
             />
           </Navbar.Brand>
           <Navbar.Toggle
@@ -57,8 +57,8 @@ const Navigation = () => {
               <HiMenuAlt3
                 className={`toggle-icon ${toggleIcon}`}
                 style={{
-                  width: "2em",
-                  height: "2em",
+                  width: "1.8em",
+                  height: "1.8em",
                 }}
               />
             </span>
@@ -79,16 +79,40 @@ const Navigation = () => {
               </Link>
               <div className="d-flex">
                 <div className="icons m-2">
-                  <BsFacebook />
+                  <Link
+                    to="https://www.facebook.com/profile.php?id=100093830333187"
+                    target="_blank"
+                    className="text-light"
+                  >
+                    <BsFacebook />
+                  </Link>
                 </div>
                 <div className="icons m-2">
-                  <BsInstagram />
+                  <Link
+                    to="https://www.instagram.com/BuildBridgeApp"
+                    target="_blank"
+                    className="text-light"
+                  >
+                    <BsInstagram />
+                  </Link>
                 </div>
                 <div className="icons m-2">
-                  <BsTwitter />
+                  <Link
+                    to="https://www.twitter.com/BuildBridgeApp"
+                    target="_blank"
+                    className="text-light"
+                  >
+                    <BsTwitter />
+                  </Link>
                 </div>
                 <div className="icons m-2">
-                  <BsLinkedin />
+                  <Link
+                    to="https://www.youtube.com/BuildBridgeApp"
+                    target="_blank"
+                    className="text-light"
+                  >
+                    <BsYoutube />
+                  </Link>
                 </div>
               </div>
             </Nav>
