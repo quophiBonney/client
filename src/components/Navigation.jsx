@@ -82,7 +82,7 @@ const Navigation = () => {
                   <Link
                     to="https://www.facebook.com/profile.php?id=100093830333187"
                     target="_blank"
-                    className="text-light"
+                    className={`${navLink}`}
                   >
                     <BsFacebook />
                   </Link>
@@ -91,7 +91,7 @@ const Navigation = () => {
                   <Link
                     to="https://www.instagram.com/BuildBridgeApp"
                     target="_blank"
-                    className="text-light"
+                    className={`${navLink}`}
                   >
                     <BsInstagram />
                   </Link>
@@ -100,7 +100,7 @@ const Navigation = () => {
                   <Link
                     to="https://www.twitter.com/BuildBridgeApp"
                     target="_blank"
-                    className="text-light"
+                    className={`${navLink}`}
                   >
                     <BsTwitter />
                   </Link>
@@ -109,7 +109,7 @@ const Navigation = () => {
                   <Link
                     to="https://www.youtube.com/BuildBridgeApp"
                     target="_blank"
-                    className="text-light"
+                    className={`${navLink}`}
                   >
                     <BsYoutube />
                   </Link>
