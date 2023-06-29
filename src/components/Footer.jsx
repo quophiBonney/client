@@ -18,7 +18,7 @@ const Footer = () => {
                   style={{width: "6rem", height: "6rem"}}
                 />
               </li>
-              <li className="paragraph">
+              <li className="footer-text">
                 We are passionate about empowering Aricans in the diaspora to
                 realize their construction dreams back on the continent.
               </li>
@@ -26,13 +26,11 @@ const Footer = () => {
           </Col>
           <Col sm={12} md={4} lg={4} className="mt-5">
             <ul>
-              <li className="paragraph text-uppercase footer-title py-2">
-                Quick Links
-              </li>
+              <li className="text-uppercase footer-title py-2">Quick Links</li>
               <li>
                 <Link
                   to="/"
-                  className="paragraph text-decoration-none text-light"
+                  className="footer-text text-decoration-none text-light"
                 >
                   Home
                 </Link>
@@ -40,7 +38,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/works"
-                  className="paragraph text-decoration-none text-light"
+                  className="footer-text text-decoration-none text-light"
                 >
                   How It Works
                 </Link>
@@ -48,7 +46,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/about-us"
-                  className="paragraph text-decoration-none text-light"
+                  className="footer-text text-decoration-none text-light"
                 >
                   About Us
                 </Link>
@@ -56,7 +54,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/contact"
-                  className="paragraph text-decoration-none text-light"
+                  className="footer-text text-decoration-none text-light"
                 >
                   Contact
                 </Link>
@@ -65,18 +63,16 @@ const Footer = () => {
           </Col>
           <Col sm={12} md={4} lg={4} className="mt-5">
             <ul>
-              <li className="paragraph text-uppercase footer-title py-2">
-                Locate Us
-              </li>
-              <li className="paragraph">ECG Volta Credit Union-Building</li>
-              <li className="paragraph">Ho,Volta Region-Ghana</li>
-              <li className="paragraph">buildbridge6@gmail.com</li>
-              <li className="paragraph">+23324414610</li>
+              <li className="text-uppercase footer-title py-2">Locate Us</li>
+              <li className="footer-text">ECG Volta Credit Union-Building</li>
+              <li className="footer-text">Ho,Volta Region-Ghana</li>
+              <li className="footer-text">buildbridge6@gmail.com</li>
+              <li className="footer-text">+23324414610</li>
             </ul>
           </Col>
           <hr />
           <div className="py-2 text-center">
-            <p className="paragraph">
+            <p className="footer-text">
               Copyright &copy; 2023 All Rights Reserved
             </p>
           </div>

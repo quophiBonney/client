@@ -4,14 +4,16 @@ import Discover from "./Discover";
 import Flow from "./Flow";
 import Bill from "./Bill";
 import Assurance from "./Assurance";
+import Review from "./Review";
 const Home = () => {
   return (
     <div>
       <Banner />
-      <Flow />
+      <Review />
       <Bill />
-      <Assurance />
+      <Flow />
       <Discover />
+      <Assurance />
     </div>
   );
 };

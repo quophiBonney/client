@@ -5,11 +5,9 @@ const AboutBanner = () => {
     <div className="container-fluid about-banner">
       <Container className="">
         <Row className="justify-content-center">
-          <Col sm={12} md={12} lg={12} className="text-center py-3">
+          <Col sm={12} md={12} lg={7} className="text-center py-3">
             <div>
-              <h1 className="main-text">
-                <span className="comp-name">BuildBridge</span>
-              </h1>
+              <h1 className="main-text">All About BuildBridge</h1>
               <p className="paragraph text-light mb-5">
                 Our platform bridges the gap between clients and contractors,
                 providing a seamless and transparent process that ensures

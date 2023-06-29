@@ -5,11 +5,11 @@ const WorkBanner = () => {
     <div className="container-fluid works-banner">
       <Container className="">
         <Row className="justify-content-center">
-          <Col sm={12} md={12} lg={12} className="text-center py-3">
+          <Col sm={12} md={12} lg={8} className="text-center py-3">
             <div>
-              <h1 className="main-text">How To Get The BuildBridge App</h1>
+              <h1 className="main-text">Get The BuildBridge App</h1>
               <p className="paragraph text-light mb-5">
-                Discover how the <strong>BuildBridge Application</strong> workds
+                Discover how the <strong>BuildBridge Application</strong> works
                 and how and where to get the application right on your mobile
                 device.
               </p>

@@ -5,25 +5,17 @@ const ContactBanner = () => {
     <div className="container-fluid contact-banner">
       <Container className="">
         <Row className="justify-content-center">
-          <Col sm={12} md={6} lg={6} className="first-col">
+          <Col sm={12} md={6} lg={7} className="first-col text-center">
             <div>
-              <h1 className="main-text">Let's Get In Touch</h1>
+              <h1 className="main-text">Be Connected To Us</h1>
               <p className="paragraph text-light mb-5">
-                We would love to hear from you. Whether you have inquiries,
-                partnership proposals, or general feedback feel free to contact
-                us.
+                Connect with us on all social media to stay updated with the
+                latest news, success stories and industry trends. We would love
+                to hear from you. Whether you have inquiries, partnership
+                proposals, or general feedback feel free to contact us.
               </p>
             </div>
           </Col>
-          <Col
-            sm={12}
-            md={6}
-            lg={6}
-            className="sec-column mt-5"
-            data-aos="slide-left"
-            data-aos-duration="3000"
-            data-aos-delay="200"
-          ></Col>
         </Row>
       </Container>
     </div>

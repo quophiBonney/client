@@ -2,6 +2,7 @@ import React from "react";
 import {Container, Row, Col} from "react-bootstrap";
 import appstore from "../../assets/images/appstore.png";
 import playstore from "../../assets/images/playstore.png";
+import phone from "../../assets/images/client1.png";
 const Banner = () => {
   return (
     <div className="container-fluid banner">
@@ -9,16 +10,17 @@ const Banner = () => {
         <Row className="justify-content-center">
           <Col sm={12} md={6} lg={6} className="first-col">
             <div>
-              <h1 className="main-text">What is BuildBridge?</h1>
-              <p className="paragraph text-light">
+              <h1 className="home-main-text">What is BuildBridge?</h1>
+              <p className="paragraph">
                 BuildBridge is a platform for connecting Africans living in the
                 diaspora with skilled contractors back on the continent. With
                 BuildBridge, you build your dream porjects with confidence and
-                ease.
+                ease. Find reliable contractors for your construction needs and
+                experience a seamless process form start to finish.
               </p>
-              <button type="button" className="btn text-light py-2 mb-3">
-                Download Our App
-              </button>
+              <p className="third-text">
+                #1 most downloaded engaging app<sup>1</sup>
+              </p>
               <div className="d-flex mb-5">
                 <div className="m-2">
                   <img
@@ -37,15 +39,13 @@ const Banner = () => {
               </div>
             </div>
           </Col>
-          <Col
-            sm={12}
-            md={6}
-            lg={6}
-            className="sec-column mt-5"
-            data-aos="slide-left"
-            data-aos-duration="3000"
-            data-aos-delay="200"
-          ></Col>
+          <Col sm={12} md={6} lg={6} className="mt-5">
+            <img
+              src={phone}
+              alt="download from appstore"
+              className="img-fluid img-responsive mt-3"
+            />
+          </Col>
         </Row>
       </Container>
     </div>
