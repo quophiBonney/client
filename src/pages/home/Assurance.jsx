@@ -1,6 +1,8 @@
 import React from "react";
 import {Container, Row, Col} from "react-bootstrap";
-import hand from "../../assets/images/hand.png";
+import client from "../../assets/images/client1.png";
+import appstore from "../../assets/images/appstore.png";
+import playstore from "../../assets/images/playstore.png";
 const Assurance = () => {
   return (
     <div className="container-fluid assurance">
@@ -28,6 +30,22 @@ const Assurance = () => {
               to meet your specific needs and have peace of mind knowing that
               all parties are on the same page.
             </p>
+            <div className="d-flex mb-5">
+              <div className="m-2">
+                <img
+                  src={appstore}
+                  alt="download from appstore"
+                  className="img-fluid"
+                />
+              </div>
+              <div className="m-2">
+                <img
+                  src={playstore}
+                  alt="download from appstore"
+                  className="img-fluid"
+                />
+              </div>
+            </div>
           </Col>
           <Col
             sm={12}
@@ -39,7 +57,7 @@ const Assurance = () => {
             data-aos-delay="100"
           >
             <img
-              src={hand}
+              src={client}
               alt="phone"
               className="img-fluid img-responsive"
               loading="lazy"

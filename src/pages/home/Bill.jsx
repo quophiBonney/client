@@ -33,9 +33,6 @@ const Bill = () => {
               confidently select the contractor who aligns best with vision and
               requirements.
             </p>
-            <button type="button" className="btn btn-success py-2 mb-3">
-              Download Our App
-            </button>
             <div className="d-flex mb-5">
               <div className="m-2">
                 <img

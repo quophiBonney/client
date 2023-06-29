@@ -43,13 +43,24 @@ const Navigation = () => {
             <img
               src={`${first}`}
               className="img-responsive img-fluid"
+              id="logo"
               alt="logo"
-              style={{width: "4.5em", height: "3em"}}
+              style={{width: "2em", height: "2em"}}
             />
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav bg-dark">
+          <Navbar.Toggle
+            aria-controls="responsive-navbar-nav"
+            onFocus={e => e.target.blur()}
+            style={{border: "0"}}
+          >
             <span className="">
-              <HiMenuAlt3 className={`${toggleIcon}`} />
+              <HiMenuAlt3
+                className={`toggle-icon ${toggleIcon}`}
+                style={{
+                  width: "2em",
+                  height: "2em",
+                }}
+              />
             </span>
           </Navbar.Toggle>
           <Navbar.Collapse id="responsive-navbar-nav">

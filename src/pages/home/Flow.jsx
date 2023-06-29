@@ -3,7 +3,6 @@ import {Container, Row, Col} from "react-bootstrap";
 import client1 from "../../assets/images/client1.png";
 import appstore from "../../assets/images/appstore.png";
 import playstore from "../../assets/images/playstore.png";
-import {BsDownload} from "react-icons/bs";
 const Flow = () => {
   return (
     <div className="container-fluid bill">
@@ -47,10 +46,6 @@ const Flow = () => {
               to navigate trough the app and get your ocnstruction journey
               underway
             </p>
-            <button type="button" className="btn text-light py-2 mb-3">
-              Download Our App
-              <BsDownload className="m-2" />
-            </button>
             <div className="d-flex mb-5">
               <div className="m-2">
                 <img
