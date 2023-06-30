@@ -45,7 +45,7 @@ const Navigation = () => {
               className="img-responsive img-fluid"
               id="logo"
               alt="logo"
-              style={{width: "3.4em", height: "3.4em"}}
+              style={{width: "100px", height: "3.5em", objectFit: "cover"}}
             />
           </Navbar.Brand>
           <Navbar.Toggle
@@ -57,8 +57,8 @@ const Navigation = () => {
               <HiMenuAlt3
                 className={`toggle-icon ${toggleIcon}`}
                 style={{
-                  width: "1.5em",
-                  height: "1.5em",
+                  width: "1.6em",
+                  height: "1.6em",
                 }}
               />
             </span>
@@ -77,41 +77,53 @@ const Navigation = () => {
               <Link to="/contact" className={`m-2 ${navLink}`}>
                 Contact
               </Link>
-              <div className="d-flex">
-                <div className="icons m-2">
+              <div id="icon-container">
+                <div className="icons m-1">
                   <Link
                     to="https://www.facebook.com/profile.php?id=100093830333187"
                     target="_blank"
-                    className={`${navLink}`}
+                    className="facebook"
                   >
-                    <BsFacebook />
+                    <div className="d-flex">
+                      <BsFacebook className="m-2" />
+                      <div className="icon-name">&nbsp;Facebook</div>
+                    </div>
                   </Link>
                 </div>
-                <div className="icons m-2">
+                <div className="icons m-1">
                   <Link
                     to="https://www.instagram.com/BuildBridgeApp"
                     target="_blank"
-                    className={`${navLink}`}
+                    className="instagram"
                   >
-                    <BsInstagram />
+                    <div className="d-flex">
+                      <BsInstagram className="m-2" />
+                      <div className="icon-name">&nbsp;Youtube</div>
+                    </div>
                   </Link>
                 </div>
-                <div className="icons m-2">
+                <div className="icons m-1">
                   <Link
                     to="https://www.twitter.com/BuildBridgeApp"
                     target="_blank"
-                    className={`${navLink}`}
+                    className="twitter"
                   >
-                    <BsTwitter />
+                    <div className="d-flex">
+                      <BsTwitter className="m-2" />
+                      <div className="icon-name">&nbsp;Twitter</div>
+                    </div>
                   </Link>
                 </div>
-                <div className="icons m-2">
+                <div className="icons m-1">
                   <Link
                     to="https://www.youtube.com/BuildBridgeApp"
                     target="_blank"
-                    className={`${navLink}`}
+                    className="youtube"
                   >
-                    <BsYoutube />
+                    <div className="d-flex">
+                      <BsYoutube className="m-2" />
+                      <div className="icon-name">&nbsp;Youtube</div>
+                    </div>
                   </Link>
                 </div>
               </div>

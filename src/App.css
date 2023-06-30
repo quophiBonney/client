@@ -14,7 +14,7 @@ body {
 }
 /*** Navbar ***/
 .navbar-transparent {
-  background: rgba(0, 0, 0, 0.821);
+  background: rgba(0, 0, 0, 0.8);
   color: #fff!important;
   transition: .5s ease-out;
   height: auto;
@@ -34,6 +34,22 @@ body {
   font-family: 'Poppins', sans-serif;
   padding: 2px 10px;
   font-weight: 900;
+  text-decoration: none;
+}
+.facebook {
+  color: rgb(46, 46, 227);
+  text-decoration: none;
+}
+.instagram {
+  color: brown;
+  text-decoration: none;
+}
+.twitter {
+  color: rgb(120, 185, 206);
+  text-decoration: none;
+}
+.youtube {
+  color: red;
   text-decoration: none;
 }
 /**** Texts Fonts Sizes ****/
@@ -136,7 +152,8 @@ img {
   background-size: cover;
 }
 .review {
-  background: linear-gradient( rgba(200, 240, 240, 0.461),rgba(200, 240, 240, 0.461));
+  background: #fff;
+  height: auto;
 }
 .works-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("/src/assets/images/contact.png");
@@ -195,10 +212,28 @@ img {
 ul {
   list-style: none;
 }
+/*** Responsive Design ***/
+@media screen and (min-width: 769px) {
+  #icon-container {
+    display: flex;
+  }
+  .icon-name {
+   display: none;
+  }
+}
 @media screen and (max-width: 768px) {
   body {
     height: 100vh;
     overflow-x: hidden;
+  }
+  #icon-container {
+    display: block;
+  }
+  .icon-name {
+    display: flex;
+    margin-top: 5px;
+    color: gray;
+    font-weight: 600;
   }
   .main-text {
     margin-top: 100px;
