@@ -7,7 +7,7 @@ const Assurance = () => {
   return (
     <div className="container-fluid assurance">
       <Container className="py-3">
-        <Row className="justify-content-center">
+        <Row className="justify-content-center flex-sm-row-reverse">
           <Col
             sm={12}
             md={6}
