@@ -7,7 +7,23 @@ const Bill = () => {
   return (
     <div className="container-fluid bill">
       <Container className="py-3">
-        <Row className="justify-content-center">
+        <Row className="justify-content-center flex-sm-row-reverse">
+          <Col
+            sm={12}
+            md={6}
+            lg={6}
+            className="mt-5 mb-3"
+            data-aos="fade-in"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
+            <img
+              src={client1}
+              alt="phone"
+              className="img-fluid img-responsive"
+              loading="lazy"
+            />
+          </Col>
           <Col
             sm={12}
             md={6}
@@ -49,22 +65,6 @@ const Bill = () => {
                 />
               </div>
             </div>
-          </Col>
-          <Col
-            sm={12}
-            md={6}
-            lg={6}
-            className="mt-5 mb-3"
-            data-aos="fade-in"
-            data-aos-duration="1000"
-            data-aos-delay="100"
-          >
-            <img
-              src={client1}
-              alt="phone"
-              className="img-fluid img-responsive"
-              loading="lazy"
-            />
           </Col>
         </Row>
       </Container>
