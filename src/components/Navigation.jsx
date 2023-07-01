@@ -45,7 +45,7 @@ const Navigation = () => {
               className="img-responsive img-fluid"
               id="logo"
               alt="logo"
-              style={{width: "6em", height: "80px", objectFit: "fill"}}
+              style={{width: "5.5em", height: "80px", objectFit: "fill"}}
             />
           </Navbar.Brand>
           <Navbar.Toggle
