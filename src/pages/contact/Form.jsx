@@ -159,19 +159,6 @@ const Form = () => {
           </Col>
         </Row>
       </Container>
-      <div className="container-fluid mt-5">
-        <div className="row">
-          <div className="col-sm-12 col-md-12 col-lg-12">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d1016335.1939498353!2d-0.9790578424123823!3d5.704565935443775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d5.5912087!2d-0.17972939999999998!4m5!1s0xfdfabaa923b6b57%3A0xf3603ce39573da6f!2sborex%20technology!3m2!1d5.688426199999999!2d-0.5596177!5e0!3m2!1sen!2sgh!4v1687916606280!5m2!1sen!2sgh"
-              style={{width: "100%", height: "450px", border: "0"}}
-              allowFullScreen=""
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-        </div>
-      </div>
     </div>
   );
 };

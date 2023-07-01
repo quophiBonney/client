@@ -39,13 +39,13 @@ const Navigation = () => {
     <div>
       <Navbar expand="lg" className={`fixed-top ${navbar}`}>
         <Container>
-          <Navbar.Brand href="#">
+          <Navbar.Brand href="#" className=" h-50">
             <img
               src={`${first}`}
               className="img-responsive img-fluid"
               id="logo"
               alt="logo"
-              style={{width: "100px", height: "3em", objectFit: "cover"}}
+              style={{width: "6em", height: "80px", objectFit: "fill"}}
             />
           </Navbar.Brand>
           <Navbar.Toggle

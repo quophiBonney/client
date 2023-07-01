@@ -14,7 +14,7 @@ body {
 }
 /*** Navbar ***/
 .navbar-transparent {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.962);
   color: #fff!important;
   transition: .5s ease-out;
   height: auto;
@@ -26,7 +26,7 @@ body {
   transition: .5s ease-out;
   height: auto;
 }
-.logo-container img {
+#logo {
   width: "4em"!important;
   height: "1em"!important;
 }
@@ -124,6 +124,7 @@ img {
 }
 /*** Home Banner Styling ****/
 .banner {
+  margin-top: 105px;
   background: teal;
   height: auto;
 }
@@ -161,9 +162,6 @@ img {
   background-attachment: fixed;
   background-position: top center;
   background-size: cover;
-}
-.first-col {
-  backdrop-filter: blur(2px);
 }
 .btn {
   font-family: 'Poppins', sans-serif!important;
@@ -225,6 +223,9 @@ ul {
   body {
     height: 100vh;
     overflow-x: hidden;
+  }
+  .home-main-text {
+    margin-top: 20px;
   }
   #icon-container {
     display: block;

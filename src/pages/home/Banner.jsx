@@ -39,11 +39,11 @@ const Banner = () => {
               </div>
             </div>
           </Col>
-          <Col sm={12} md={6} lg={6} className="mt-5">
+          <Col sm={12} md={6} lg={6} className="">
             <img
               src={phone}
               alt="download from appstore"
-              className="img-fluid img-responsive mt-5"
+              className="img-fluid img-responsive mt-3"
             />
           </Col>
         </Row>
