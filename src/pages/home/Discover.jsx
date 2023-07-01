@@ -6,7 +6,7 @@ import playstore from "../../assets/images/playstore.png";
 const Discover = () => {
   return (
     <div className="container-fluid discover">
-      <Container className="">
+      <Container>
         <Row className="justify-content-center">
           <Col
             sm={12}

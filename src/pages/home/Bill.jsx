@@ -6,8 +6,8 @@ import playstore from "../../assets/images/playstore.png";
 const Bill = () => {
   return (
     <div className="container-fluid bill">
-      <Container className="py-3">
-        <Row className="justify-content-center flex-sm-row-reverse">
+      <Container>
+        <Row className="justify-content-center">
           <Col
             sm={12}
             md={6}

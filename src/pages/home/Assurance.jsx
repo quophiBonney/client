@@ -6,8 +6,24 @@ import playstore from "../../assets/images/playstore.png";
 const Assurance = () => {
   return (
     <div className="container-fluid assurance">
-      <Container className="py-3">
-        <Row className="justify-content-center flex-sm-row-reverse">
+      <Container>
+        <Row className="justify-content-center flex-row-reverse">
+          <Col
+            sm={12}
+            md={6}
+            lg={6}
+            className="mt-5 mb-3"
+            data-aos="fade-in"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
+            <img
+              src={client}
+              alt="phone"
+              className="img-fluid img-responsive"
+              loading="lazy"
+            />
+          </Col>
           <Col
             sm={12}
             md={6}
@@ -46,22 +62,6 @@ const Assurance = () => {
                 />
               </div>
             </div>
-          </Col>
-          <Col
-            sm={12}
-            md={6}
-            lg={6}
-            className="mt-5 mb-3"
-            data-aos="fade-in"
-            data-aos-duration="1000"
-            data-aos-delay="100"
-          >
-            <img
-              src={client}
-              alt="phone"
-              className="img-fluid img-responsive"
-              loading="lazy"
-            />
           </Col>
         </Row>
       </Container>
