@@ -3,7 +3,13 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import {HiMenuAlt3} from "react-icons/hi";
-import {BsFacebook, BsInstagram, BsTwitter, BsYoutube} from "react-icons/bs";
+import {
+  BsFacebook,
+  BsInstagram,
+  BsPinterest,
+  BsTwitter,
+  BsYoutube,
+} from "react-icons/bs";
 import {Link, useLocation} from "react-router-dom";
 import logo from "../assets/images/logo3.png";
 import secondLogo from "../assets/images/logo2.png";
@@ -42,7 +48,7 @@ const Navigation = () => {
   }, []);
   return (
     <div>
-      <Navbar expand="lg" className={`fixed-top ${navbar}`} collapseOnSelect>
+      <Navbar expand="lg" className={`fixed-top ${navbar}`}>
         <Container>
           <Navbar.Brand href="#" className=" h-50">
             <img
@@ -122,10 +128,11 @@ const Navigation = () => {
                   <Link
                     to="https://www.facebook.com/profile.php?id=100093830333187"
                     target="_blank"
-                    className="facebook"
+                    title="facebook"
+                    className="text-decoration-none"
                   >
                     <div className="d-flex">
-                      <BsFacebook className="m-2" />
+                      <BsFacebook className="m-2 facebook" />
                       <div className="icon-name">&nbsp;Facebook</div>
                     </div>
                   </Link>
@@ -134,11 +141,12 @@ const Navigation = () => {
                   <Link
                     to="https://www.instagram.com/BuildBridgeApp"
                     target="_blank"
-                    className="instagram"
+                    title="instagram"
+                    className="text-decoration-none"
                   >
                     <div className="d-flex">
-                      <BsInstagram className="m-2" />
-                      <div className="icon-name">&nbsp;Youtube</div>
+                      <BsInstagram className="m-2 instagram" />
+                      <div className="icon-name">&nbsp;Instagram</div>
                     </div>
                   </Link>
                 </div>
@@ -146,23 +154,38 @@ const Navigation = () => {
                   <Link
                     to="https://www.twitter.com/BuildBridgeApp"
                     target="_blank"
-                    className="twitter"
+                    title="twitter"
+                    className="text-decoration-none"
                   >
                     <div className="d-flex">
-                      <BsTwitter className="m-2" />
+                      <BsTwitter className="m-2 twitter" />
                       <div className="icon-name">&nbsp;Twitter</div>
                     </div>
                   </Link>
                 </div>
                 <div className="icons m-1">
                   <Link
-                    to="https://www.youtube.com/BuildBridgeApp"
+                    to="https://www.youtube.com/@BuildBridgeApp"
                     target="_blank"
-                    className="youtube"
+                    title="youtube"
+                    className="text-decoration-none"
                   >
                     <div className="d-flex">
-                      <BsYoutube className="m-2" />
+                      <BsYoutube className="m-2 youtube" />
                       <div className="icon-name">&nbsp;Youtube</div>
+                    </div>
+                  </Link>
+                </div>
+                <div className="icons m-1">
+                  <Link
+                    to="https://www.pinterest.com/buildbridge"
+                    target="_blank"
+                    title="pinterest"
+                    className="text-decoration-none"
+                  >
+                    <div className="d-flex">
+                      <BsPinterest className="m-2 pinterest" />
+                      <div className="icon-name">&nbsp;Pinterest</div>
                     </div>
                   </Link>
                 </div>
