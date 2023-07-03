@@ -9,10 +9,11 @@ const Video = () => {
           <Row className="justify-content-center">
             <Col sm={12} md={12} lg={6}>
               <div>
-                <h1 className="main-text text-dark">Discover Everything</h1>
+                <h1 className="main-text text-dark">BuildBridge</h1>
                 <p className="paragraph text-dark mb-3">
-                  Get to know everything about the <strong>buildbridge</strong>{" "}
-                  application.
+                  Bridging the gap between clients and contractors by providing
+                  seamless and transparent process that ensures high-quality
+                  workmanship and customer satisfaction.
                 </p>
               </div>
             </Col>
