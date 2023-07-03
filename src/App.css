@@ -13,6 +13,9 @@ body {
   overflow-x: hidden;
 }
 /*** Navbar ***/
+.active {
+  color: blue;
+}
 .navbar-transparent {
   background: rgba(0, 0, 0, 0.962);
   color: #fff!important;
@@ -35,6 +38,12 @@ body {
   padding: 2px 10px;
   font-weight: 900;
   text-decoration: none;
+}
+.navLink:hover {
+  opacity: .8;
+}
+.navLInk.active {
+  border-bottom: 5px solid #fff;
 }
 .facebook {
   color: rgb(46, 46, 227);
@@ -145,11 +154,11 @@ img {
   border-radius: 10px;
 }
 .about-banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("/src/assets/images/banner-04.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("/src/assets/images/contact.png");
   height: auto;
   filter: sepia(30%);
   background-attachment: fixed;
-  background-position: center center;
+  background-position: top center;
   background-size: cover;
 }
 .review {

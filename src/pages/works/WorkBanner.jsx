@@ -15,15 +15,6 @@ const WorkBanner = () => {
               </p>
             </div>
           </Col>
-          <Col
-            sm={12}
-            md={6}
-            lg={6}
-            className="sec-column mt-5"
-            data-aos="slide-left"
-            data-aos-duration="3000"
-            data-aos-delay="200"
-          ></Col>
         </Row>
       </Container>
     </div>

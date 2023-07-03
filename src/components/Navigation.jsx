@@ -1,19 +1,24 @@
-import React, {useState, useEffect} from "react";
+import React, {useState, useEffect, useRef} from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import {HiMenuAlt3} from "react-icons/hi";
 import {BsFacebook, BsInstagram, BsTwitter, BsYoutube} from "react-icons/bs";
-import {Link} from "react-router-dom";
+import {Link, useLocation} from "react-router-dom";
 import logo from "../assets/images/logo3.png";
 import secondLogo from "../assets/images/logo2.png";
 const Navigation = () => {
+  const location = useLocation();
+  const navbarRef = useRef(null);
   const [first, setFirst] = useState(secondLogo);
   const [toggleIcon, setToggleIcon] = useState("text-light");
   const [navLink, setNavLink] = useState(
     "text-light navLink text-decoration-none"
   );
   const [navbar, setNavbar] = useState("navbar-transparent");
+  const refresh = () => {
+    window.onload();
+  };
   useEffect(() => {
     const changeNavbarBackground = () => {
       const scrollPosition = window.scrollY;
@@ -37,7 +42,7 @@ const Navigation = () => {
   }, []);
   return (
     <div>
-      <Navbar expand="lg" className={`fixed-top ${navbar}`}>
+      <Navbar expand="lg" className={`fixed-top ${navbar}`} collapseOnSelect>
         <Container>
           <Navbar.Brand href="#" className=" h-50">
             <img
@@ -65,16 +70,51 @@ const Navigation = () => {
           </Navbar.Toggle>
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ms-auto">
-              <Link to="/" className={`m-2 ${navLink}`}>
+              <Link
+                as={Link}
+                to="/"
+                active={location.pathname === "/"}
+                className={
+                  location.pathname === "/"
+                    ? `m-2 ${navLink} border-bottom border-bottom-width-2 border-bottom-color-black`
+                    : `m-2 ${navLink}`
+                }
+                onClick={refresh}
+              >
                 Home
               </Link>
-              <Link to="/works" className={`m-2 ${navLink}`}>
+              <Link
+                to="/works"
+                active={location.pathname === "/works"}
+                className={
+                  location.pathname === "/works"
+                    ? `m-2 ${navLink} border-bottom border-bottom-width-2 border-bottom-color-black`
+                    : `m-2 ${navLink}`
+                }
+                onClick={refresh}
+              >
                 How It Works
               </Link>
-              <Link to="/about-us" className={`m-2 ${navLink}`}>
+              <Link
+                to="/about-us"
+                className={
+                  location.pathname === "/about-us"
+                    ? `m-2 ${navLink} border-bottom border-bottom-width-2 border-bottom-color-black`
+                    : `m-2 ${navLink}`
+                }
+                onClick={refresh}
+              >
                 About Us
               </Link>
-              <Link to="/contact" className={`m-2 ${navLink}`}>
+              <Link
+                to="/contact"
+                className={
+                  location.pathname === "/contact"
+                    ? `m-2 ${navLink} border-bottom border-bottom-width-2 border-bottom-color-black`
+                    : `m-2 ${navLink}`
+                }
+                onClick={refresh}
+              >
                 Contact
               </Link>
               <div id="icon-container">

@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import "./App.css";
 import Navigation from "./components/Navigation";
-import {Routes, Route} from "react-router-dom";
+import {Routes, Route, useLocation} from "react-router-dom";
 import Home from "./pages/home/Home";
 import Contact from "./pages/contact/Contact";
 import About from "./pages/about/About";
@@ -12,6 +12,7 @@ import Footer from "./components/Footer";
 import Preloader from "./components/Preloader";
 function App() {
   const [preloader, setPreloader] = useState(true);
+  const location = useLocation();
   useEffect(() => {
     setTimeout(() => {
       setPreloader(false);
@@ -19,9 +20,10 @@ function App() {
   });
 
   AOS.init();
+  const isHome = location.pathname === "/";
   return (
     <>
-      {preloader ? (
+      {preloader && isHome ? (
         <Preloader />
       ) : (
         <div>
